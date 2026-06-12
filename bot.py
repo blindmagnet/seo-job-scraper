@@ -88,36 +88,53 @@ MIN_FIT_SCORE    = 35
 MAX_JOB_AGE_DAYS = 7
 
 JSEARCH_QUERIES = {
-    1: ["Junior SEO remote", "Technical SEO remote", "SEO Python remote"],
-    2: ["SEO Content Editor remote", "WordPress SEO Specialist remote"],
-    3: ["on-page SEO specialist remote", "SEO copywriter remote"],
+    1: [
+        "WordPress developer remote",
+        "WooCommerce developer remote",
+        "PHP developer remote",
+    ],
+    2: [
+        "WordPress plugin developer remote",
+        "WordPress WooCommerce freelance remote",
+    ],
+    3: [
+        "Python Django developer remote",
+        "full stack PHP developer remote",
+    ],
 }
-
 _DEFAULT_SKILLS = [
-    "python", "wordpress", "technical seo", "on-page seo",
-    "screaming frog", "ahrefs", "semrush", "google analytics",
-    "google search console", "content", "keyword research",
-    "html", "cms", "link building", "schema",
+    "wordpress", "woocommerce", "php", "python", "django",
+    "javascript", "jquery", "html", "css", "rest api",
+    "mysql", "postgresql", "sqlite", "git", "github",
+    "ajax", "oop", "plugin development", "elementor",
+    "gsap", "responsive", "rtl", "seo",
 ]
 _user_skills_env = os.environ.get("USER_SKILLS", "")
 MY_SKILLS = [s.strip().lower() for s in _user_skills_env.split(",") if s.strip()] if _user_skills_env else _DEFAULT_SKILLS
 
 BLACKLIST_KEYWORDS = [
-    "us residents only", "must reside in us", "must be located in us",
-    "must be based in the us", "must be based in us",
-    "must be authorized to work in the us",
-    "senior seo", "head of seo", "director of seo", "vp of",
-    "agency", "full stack", "fullstack",
-    "native english speaker only",
+    "us residents only", "must reside in us",
+    "must be based in the us",
+    "senior developer", "lead developer",
     "10+ years", "8+ years", "7+ years",
+    "native english only",
+    "react native", "ios developer", "android developer",
 ]
 
 BOOST_KEYWORDS = {
-    "technical seo": 20, "python": 18, "wordpress": 15,
-    "junior": 18, "entry level": 15, "associate": 12,
-    "seo specialist": 12, "seo editor": 12, "content editor": 10,
-    "on-page": 10, "part-time": 8, "contract": 5,
-    "remote-first": 8, "async": 5, "flexible": 4,
+    "wordpress": 20,
+    "woocommerce": 20,
+    "php": 15,
+    "plugin": 15,
+    "python": 12,
+    "django": 12,
+    "junior": 18,
+    "entry level": 15,
+    "part-time": 10,
+    "contract": 8,
+    "remote-first": 8,
+    "async": 5,
+    "flexible": 4,
 }
 
 _SKILL_PATTERNS   = {s: re.compile(r"\b" + re.escape(s) + r"\b", re.I) for s in MY_SKILLS}
