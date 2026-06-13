@@ -1,27 +1,17 @@
-Write a professional cover letter for the following job posting.
+Write a professional cover letter for the {title} position at {company}.
 
-About me:
+About the applicant:
 - Name: Ghazaleh Ghasemzadeh
 - Role: WordPress Developer & WooCommerce Specialist
-- Location: Tehran, Iran (open to remote work)
-- Email: ghazaleh.ghasemzadehll@gmail.com
-- GitHub: github.com/blindmagnet
+- Location: Tehran, Iran (open to remote)
+- Skills: WordPress, WooCommerce, PHP, Python, Django, JavaScript, MySQL, REST API, Git
 
-My skills:
-- WordPress & WooCommerce (custom plugin development, theme customization, RTL support)
-- PHP (OOP, hooks/filters, REST API, WP-Cron, security)
-- Frontend: HTML5, CSS3, JavaScript (ES6+), jQuery, GSAP, AJAX
-- Python, Django REST Framework
-- MySQL, PostgreSQL, SQLite
-- Performance optimization (Core Web Vitals), SEO (RankMath)
-- Git, GitHub, Linux
+Key experience:
+- Built full WooCommerce store from scratch at Lavazemito.ir
+- Developed custom warranty plugin for bekohome.com (PHP, OOP, MySQL)
+- Built e-commerce Telegram bot (Python, SQLite, ZarinPal)
+- Delivered freelance WordPress projects via Karlancer
 
-My experience:
-- WordPress Developer at Lavazemito.ir (Apr 2024 - Present): built full WooCommerce store from scratch
-- Freelance: built awoodhome.ir (WoodMart + WooCommerce), custom warranty plugin for bekohome.com, Telegram e-commerce bot with Python
-- Education: B.Sc. Electrical Engineering, Amirkabir University of Technology
+Job link: {url}
 
-Job posting to write cover letter for:
-{job_details}
-
-Write a concise, professional cover letter (3 paragraphs max). Highlight relevant skills that match the job. Keep it honest and specific. Do not use generic filler phrases.
+Write a concise cover letter (3 paragraphs). Be specific and professional. No generic filler.
